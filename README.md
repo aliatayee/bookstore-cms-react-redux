@@ -6,8 +6,8 @@
 - [ ] CSS
 - [ ] JAVASCRIPT
 - [ ] REACT
+- [ ] REDUX
 - [ ] NPM
-- [ ] WEBPACK
 ### Demo
 Coming Soon
 ### Install & Setup
