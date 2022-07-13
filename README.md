@@ -1,6 +1,6 @@
 
-# Bookstore
-
+# Bookstore CMS
+This is a Bookstore CMS project based on React and Redux to display a list of books, categorize it, add and remove books and update your reading progress. It basically stores the added books and fetch the stored list of books using remote API.  
 ## Major Technologies
 - [ ] HTML5
 - [ ] CSS

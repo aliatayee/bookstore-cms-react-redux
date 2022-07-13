@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { v4 } from 'uuid';
 import { useDispatch } from 'react-redux/es/exports';
 import { addBook } from '../redux/books/books';
@@ -6,23 +6,21 @@ import { addBook } from '../redux/books/books';
 const Form = () => {
   const dispatch = useDispatch();
 
-  const handleForm = (e) => {
+  const [inputs, setInputs] = useState({});
+
+  const handleChange = (e) => {
+    const { name } = e.target;
+    const { value } = e.target;
+    const uid = v4();
+    setInputs((values) => ({ ...values, id: uid, [name]: value }));
+  };
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const [title, author] = e.target.elements;
-    if (title.value.trim() && author.value.trim()) {
-      const bookObject = {
-        id: v4(),
-        title: title.value.trim(),
-        author: author.value.trim(),
-      };
-      dispatch(addBook(bookObject));
-      title.value = '';
-      author.value = '';
-      title.focus();
-    }
+    dispatch(addBook(inputs));
+    setInputs('');
   };
   return (
-    <form className="mb-8" onSubmit={handleForm} action="/">
+    <form className="mb-8" onSubmit={handleSubmit} action="/">
       <div className="border-t pt-5 mt-8">
         <h2>Add new book</h2>
       </div>
@@ -31,6 +29,8 @@ const Form = () => {
           <input
             type="text"
             name="title"
+            value={inputs.title || ''}
+            onChange={handleChange}
             className="form-input mt-3 block w-full rounded-md border-gray-300 shadow-sm py-2 rounded"
             placeholder="Book Title"
           />
@@ -39,6 +39,8 @@ const Form = () => {
           <input
             type="text"
             name="author"
+            value={inputs.author || ''}
+            onChange={handleChange}
             className="form-input mt-3 block w-full rounded-md border-gray-300 shadow-sm py-2 rounded"
             placeholder="Author"
           />
