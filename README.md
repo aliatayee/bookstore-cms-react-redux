@@ -1,6 +1,6 @@
 
-# Bookstore
-
+# Bookstore CMS
+This is a Bookstore CMS project based on React and Redux to display a list of books, categorize it, add and remove books and update your reading progress. It basically stores the added books and fetch the stored list of books using remote API.  
 ## Major Technologies
 - [ ] HTML5
 - [ ] CSS
@@ -16,13 +16,13 @@ To setup and install this sample Leaderboard project, follow the below steps:
 - Clone this project by the command: 
 
 ```
-$ git clone https://github.com/aliatayee/bookstore
+$ git clone https://github.com/aliatayee/bookstore-cms-react-redux
 ```
 
 - Then switch to the project folder by the bellow query:
 
 ```
-$ cd bookstore
+$ cd bookstore-cms-react-redux
 ```
 
 - Then run the below command to install dependencies

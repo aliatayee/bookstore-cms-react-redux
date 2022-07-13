@@ -1,6 +1,24 @@
+import { v4 } from 'uuid';
+
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
-const initialState = [];
+const initialState = [
+  {
+    id: v4(),
+    title: 'Becoming',
+    author: 'Michael Obama',
+  },
+  {
+    id: v4(),
+    title: 'The Fire Next Time',
+    author: 'James Baldwin',
+  },
+  {
+    id: v4(),
+    title: 'A Manual for Cleaning Women',
+    author: 'Lucia Berlin',
+  },
+];
 export const addBook = (book) => ({
   type: ADD_BOOK,
   book,
