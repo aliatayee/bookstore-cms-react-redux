@@ -16,13 +16,13 @@ To setup and install this sample Leaderboard project, follow the below steps:
 - Clone this project by the command: 
 
 ```
-$ git clone https://github.com/aliatayee/bookstore
+$ git clone https://github.com/aliatayee/bookstore-cms-react-redux
 ```
 
 - Then switch to the project folder by the bellow query:
 
 ```
-$ cd bookstore
+$ cd bookstore-cms-react-redux
 ```
 
 - Then run the below command to install dependencies
