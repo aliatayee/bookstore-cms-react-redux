@@ -8,9 +8,9 @@ module.exports = {
   /* eslint-disable global-require */
   plugins: [
     require('@tailwindcss/forms')({
-
       strategy: 'class',
     }),
+    require('daisyui'),
   ],
   /* eslint-enable global-require */
 };

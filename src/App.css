@@ -2,6 +2,11 @@
   color: black;
 }
 
-body {
+html {
   background-color: rgba(243, 243, 243, 0.527);
+}
+
+.radial-progress {
+  --value: 64;
+  --size: 4rem;
 }

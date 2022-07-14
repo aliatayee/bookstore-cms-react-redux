@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FiAlignRight } from 'react-icons/fi';
+import { HiUser } from 'react-icons/hi';
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -8,7 +9,7 @@ export default function Navbar() {
     {
       id: 1,
       path: '/',
-      text: 'Home',
+      text: 'Books',
     },
     {
       id: 2,
@@ -39,7 +40,7 @@ export default function Navbar() {
           </div>
           <div
             className={
-              `lg:flex flex-grow items-center${
+              `lg:flex flex-grow justify-between items-center${
                 navbarOpen ? ' flex' : ' hidden'}`
             }
             id="example-navbar-danger"
@@ -54,6 +55,9 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
+            <div className="flex flex-col lg:flex-row list-none ">
+              <li className="p-4 border border-slate-300 text-right rounded-full text-blue-500 font-md"><HiUser /></li>
+            </div>
           </div>
         </div>
       </nav>
