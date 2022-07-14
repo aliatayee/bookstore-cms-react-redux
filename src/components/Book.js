@@ -31,9 +31,12 @@ const Book = ({ book }) => {
           </div>
         </div>
         <div className="md:flex items-center justify-around pl-5">
-          <div className="pr-24 md:border-r">
-            <h2 className="text-2xl font-bold">64%</h2>
-            <div>Completed</div>
+          <div className="pr-24 md:border-r flex">
+            <div className="radial-progress text-blue-500 mr-6" />
+            <div>
+              <h2 className="text-2xl font-bold">64%</h2>
+              <div>Completed</div>
+            </div>
           </div>
           <div>
             <div className="text-gray-400">Current chapter</div>
