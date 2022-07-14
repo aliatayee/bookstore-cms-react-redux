@@ -1,13 +1,15 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/books';
+import { removeBookStore } from '../redux/books/books';
 
 const Book = ({ book }) => {
-  const { id, title, author } = book;
+  const {
+    title, author,
+  } = book;
   const dispatch = useDispatch();
   const removeBookHandle = (id) => {
-    dispatch(removeBook(id));
+    dispatch(removeBookStore(id));
   };
   return (
     <div className="bg-white p-3 border rounded mb-5">
@@ -20,7 +22,7 @@ const Book = ({ book }) => {
             <p className="md:pr-3 md:border-r-2">Comments</p>
             <button
               type="button"
-              onClick={() => removeBookHandle(id)}
+              onClick={() => removeBookHandle(book.item_id)}
               className="md:pr-3 md:pl-3 md:border-r-2"
             >
               Remove
@@ -46,7 +48,7 @@ const Book = ({ book }) => {
 
 Book.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.string,
+    item_id: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,
   }).isRequired,
