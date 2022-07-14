@@ -1,7 +1,19 @@
 .active-link {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 body {
-  background-color: rgba(243, 243, 243, 0.527);
+  background-color: #22272e;
+}
+
+nav {
+  background-color: #2d333b;
+}
+
+.book__container {
+  background-color: #2d333b;
+}
+
+input.form-input {
+  background-color: #2d333b;
 }

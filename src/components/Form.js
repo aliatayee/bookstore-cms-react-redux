@@ -24,7 +24,7 @@ const Form = () => {
   };
   return (
     <form className="mb-8" onSubmit={handleSubmit} action="/">
-      <div className="border-t pt-5 mt-8">
+      <div className="border-t border-t-slate-500 pt-5 mt-8 text-white">
         <h2>Add new book</h2>
       </div>
       <div className="md:flex">
@@ -34,7 +34,7 @@ const Form = () => {
             name="title"
             value={inputs.title || ''}
             onChange={handleChange}
-            className="form-input mt-3 block w-full rounded-md border-gray-300 shadow-sm py-2 rounded"
+            className="form-input mt-3 block w-full text-white border-slate-500 rounded-sm border-gray-300 shadow-sm py-2 rounded"
             placeholder="Book Title"
           />
         </div>
@@ -44,12 +44,11 @@ const Form = () => {
             name="author"
             value={inputs.author || ''}
             onChange={handleChange}
-            className="form-input mt-3 block w-full rounded-md border-gray-300 shadow-sm py-2 rounded"
+            className="form-input mt-3 border-slate-500 text-white block w-full rounded-sm border-gray-300 shadow-sm py-2 rounded"
             placeholder="Author"
           />
         </div>
-        <hr />
-        <div className="md:w-1/4 sm:w-full "><button type="submit" className="form-input mt-3 px-12 py-2  w-full bg-blue-500 border-none text-white rounded">Add Book</button></div>
+        <div className="md:w-1/4 sm:w-full border-none "><button type="submit" className="form-input mt-3 px-12 py-2  w-full bg-blue-500 border-none text-white rounded-sm">Add Book</button></div>
       </div>
     </form>
   );
