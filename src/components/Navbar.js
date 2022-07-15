@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FiAlignRight } from 'react-icons/fi';
+import { HiUser } from 'react-icons/hi';
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -8,7 +9,7 @@ export default function Navbar() {
     {
       id: 1,
       path: '/',
-      text: 'Home',
+      text: 'Books',
     },
     {
       id: 2,
@@ -20,11 +21,11 @@ export default function Navbar() {
   return (
     <>
       <div className="navBg" />
-      <nav className="relative flex flex-wrap bg-white items-center border-b border-slate-300 justify-between px-2 py-3 mb-3 nav-layout">
+      <nav className="relative flex flex-wrap bg-white items-center border-b border-slate-200 justify-between px-2 py-3 mb-3 nav-layout">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-blue-500 text-xl"
+              className="font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-blue-500 text-xl"
               href="/"
             >
               Bookstore CMS
@@ -39,7 +40,7 @@ export default function Navbar() {
           </div>
           <div
             className={
-              `lg:flex flex-grow items-center${
+              `lg:flex flex-grow justify-between items-center${
                 navbarOpen ? ' flex' : ' hidden'}`
             }
             id="example-navbar-danger"
@@ -54,6 +55,9 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
+            <div className="flex flex-col lg:flex-row list-none ">
+              <li className="p-3 border border-slate-300 text-right rounded-full text-blue-500 font-md"><HiUser /></li>
+            </div>
           </div>
         </div>
       </nav>
