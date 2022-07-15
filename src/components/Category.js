@@ -19,7 +19,7 @@ const Category = () => {
           Check status
         </button>
       </div>
-      <p className="text-white">{categories}</p>
+      <p>{categories}</p>
     </div>
   );
 };

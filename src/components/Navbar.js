@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <>
       <div className="navBg" />
-      <nav className="relative flex flex-wrap items-center border-b border-slate-600 justify-between px-2 py-3 mb-3 nav-layout">
+      <nav className="relative flex flex-wrap items-center border-b border-slate-200 justify-between px-2 py-3 mb-3 nav-layout">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
