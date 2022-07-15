@@ -25,10 +25,10 @@ const Form = () => {
   return (
     <form className="mb-8" onSubmit={handleSubmit} action="/">
       <div className="border-t border-t-slate-200 pt-5 mt-8">
-        <h2>Add new book</h2>
+        <h2 className="text-lg font-bold text-gray-400">ADD NEW BOOK</h2>
       </div>
       <div className="md:flex">
-        <div className="md:w-1/2 sm:w-full md:pr-4">
+        <div className="md:w-1/2 sm:w-full md:pr-8">
           <input
             type="text"
             name="title"
@@ -38,7 +38,7 @@ const Form = () => {
             placeholder="Book Title"
           />
         </div>
-        <div className="md:w-1/3 sm:w-full md:pr-4 ">
+        <div className="md:w-1/3 sm:w-full md:pr-8 ">
           <input
             type="text"
             name="author"

@@ -15,8 +15,8 @@ const Book = ({ book }) => {
     <div className="bg-white p-3 border rounded mb-5">
       <div className="md:grid grid-cols-2">
         <div className="grid pl-5">
-          <span className="text-gray-400">Action</span>
-          <h2 className="font-bold text-lg">{title}</h2>
+          <span className="text-gray-400 font-bold">Action</span>
+          <h2 className="font-bold text-xl">{title}</h2>
           <p className="text-blue-400">{author}</p>
           <div className="md:flex pt-3 pb-3 text-blue-400">
             <p className="md:pr-3 md:border-r-2">Comments</p>
@@ -27,7 +27,7 @@ const Book = ({ book }) => {
             >
               Remove
             </button>
-            <p className="md:pr-3 md:pl-3 md:border-r-2">Edit</p>
+            <p className="md:pr-3 md:pl-3">Edit</p>
           </div>
         </div>
         <div className="md:flex items-center justify-around pl-5">

@@ -3,7 +3,7 @@
 }
 
 html {
-  background-color: rgba(243, 243, 243, 0.527);
+  background-color: rgba(243, 243, 243, 0.507) !important;
 }
 
 .radial-progress {
