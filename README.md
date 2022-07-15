@@ -9,7 +9,7 @@ This is a Bookstore CMS project based on React and Redux to display a list of bo
 - [ ] REDUX
 - [ ] NPM
 ### Demo
-Coming Soon
+[Live Demo](https://bookstore-cms-aliatayee.netlify.app/)
 ### Install & Setup
 
 To setup and install this sample Leaderboard project, follow the below steps:
